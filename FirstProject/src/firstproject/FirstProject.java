@@ -5,17 +5,17 @@
  */
 package firstproject;
 
+import firstproject.base.Order;
 /**
  *
  * @author Allen Jordan
  */
 public class FirstProject {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        final Order order = new Order("code3642", 22.5);
+        System.out.println(order);
+        System.out.println(order.calculateFee());
     }
     
 }
