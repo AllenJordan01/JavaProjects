@@ -13,7 +13,7 @@ import firstproject.base.Order;
 public class FirstProject {
 
     public static void main(String[] args) {
-        final Order order = new Order("code3642", 22.5);
+        final Order order = new Order("code3642", 55.2);
         System.out.println(order);
         System.out.println(order.calculateFee());
     }

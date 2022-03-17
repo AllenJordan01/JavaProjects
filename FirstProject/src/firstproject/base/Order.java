@@ -13,11 +13,15 @@ public class Order {
     }
     
     public double calculateFee() {
-        return this.totalValue * 0.99;
+        if (this.totalValue > 100) {
+            return this.totalValue * 0.99;
+        } else {
+            return this.totalValue;
+        }
     }
     
      @Override
     public String toString(){
-        return "Order={" + "code= '" + code + "'," + totalValue + "}"; 
+        return "Order={" + "code='" + code + "'," + totalValue + "}"; 
 }
 }
